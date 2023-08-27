@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace MyShop.Domain.Exceptions.Suppliers;
 
-namespace MyShop.Domain.Exception.Suppliers
+public class SupplierNotFoundException :NotFoundException
 {
-    internal class SupplierNotFoundException
+    public SupplierNotFoundException()
     {
+        Exception = "Supplier not found !";
     }
 }

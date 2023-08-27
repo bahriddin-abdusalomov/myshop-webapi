@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MyShop.Domain.Entities.Shippers;
 
-public class Shipper
+public class Shipper : BaseModel
 {
     [MaxLength(50)]
     public string CompanyName { get; set; } = string.Empty;

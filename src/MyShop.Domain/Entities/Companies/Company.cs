@@ -1,30 +1,24 @@
-﻿using MyShop.Domain.Entities.Orders;
+﻿using MyShop.Domain.Entities.Products;
 using System.ComponentModel.DataAnnotations;
 
-namespace MyShop.Domain.Entities.Customers;
+namespace MyShop.Domain.Entities.Companies;
 
-public class Customer : Auditable
+public class Company : Auditable
 {
     [MaxLength(50)]
-    public string FirstName { get; set; } = String.Empty;
-
-    [MaxLength(50)]
-    public string LastName { get; set; } = String.Empty;
-
-    public DateOnly BirthDate { get; set; }
-
-    public string Country { get; set; } = String.Empty;
-
-    public string Region { get; set; } = String.Empty;
+    public string Name { get; set; } = String.Empty;
 
     [MaxLength(13)]
     public string PhoneNumber { get; set; } = String.Empty;
 
+    public string Description { get; set; } = String.Empty;
+
+    public string ImagePath { get; set; } = String.Empty;
 
     #region Connection 
 
-    public long OrderId { get; set; }
-    public ICollection<Order> Orders { get; set; } = new List<Order>();
+    public long ProductId { get; set; }
+    public ICollection<Product> Products { get; set; } = new List<Product>();
 
     #endregion
 }
