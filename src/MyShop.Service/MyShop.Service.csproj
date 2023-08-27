@@ -10,4 +10,8 @@
     <ProjectReference Include="..\MyShop.DataAccess\MyShop.DataAccess.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Services\Categories\" />
+  </ItemGroup>
+
 </Project>
