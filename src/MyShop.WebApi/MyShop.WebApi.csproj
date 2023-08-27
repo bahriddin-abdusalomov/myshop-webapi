@@ -15,4 +15,8 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MyShop.Service\MyShop.Service.csproj" />
+  </ItemGroup>
+
 </Project>
